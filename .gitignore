@@ -1,0 +1,10 @@
+*venv*/
+out/
+__pycache__/
+.dmypy.json
+
+# Ensure examples are kept
+!data/
+data/*
+!data/examples/
+uv.lock
