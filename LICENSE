@@ -1,0 +1,104 @@
+Helsing Software License Agreement
+
+This Software License Agreement ("Agreement") is between Helsing GmbH ("Helsing") and the person or entity accessing, installing or using the licensed software and any associated documentation ("You"). The terms also apply to documentation for the application programming interfaces (collectively the "APIs"), software development kits ("SDKs"), and any software code provided by Helsing in conjunction with such documentation. Any software code, documentation, SDKs, APIs, and other materials made available by Helsing are collectively referred to in this Agreement as the "Software".
+
+BY DOWNLOADING, INSTALLING, ACCESSING OR OTHERWISE USING THE APIs, SDKs, OR SOFTWARE, YOU ACCEPT THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE AGREEMENT, DO NOT INSTALL, ACCESS OR USE THE SOFTWARE OR ELEMENTS THEREOF.
+
+This Software is made available by Helsing to integrate and enable certain functionality into Your applications for the purposes of a specific project undertaken by You with Helsing. This Agreement applies to any Software that links to this Agreement and to any updates, supplements, or support services in relation thereto, unless other terms accompany those items.
+
+1. Grant of License
+
+Subject to the terms and conditions of this Agreement, Helsing grants You a non-exclusive, nontransferable, royalty-free license to:
+(a) install and use the specified Software, or elements thereof, only to develop programs consisting of compiled code generated using the Software, or any part thereof, designed to function with the Helsing products ("Developed Programs");
+(b) make a limited number of copies of the documentation to be used by Your employees or consultants for development purposes only, and not for general business purposes or for distribution; and
+(c) distribute the Software in object code and/or source code form, as may be additionally specified by Helsing, only as a component of Developed Programs.
+
+2. Restrictions on Licensed Rights
+
+2.1. You will not:
+(a) modify, disassemble, decompile, or reverse engineer any part of the Software;
+(b) copy (except for backup purposes and with all labeling and copyright notices intact) or otherwise reproduce the Software, in whole or in part;
+(c) modify, adapt, alter, translate, or incorporate into or with other software or create a derivative work of any part of the Software, except as expressly permitted herein;
+(d) remove, modify, or otherwise tamper with notices or legends on the Software or any labeling on any physical media;
+(e) distribute the Software (other than the incorporation of distributable elements of the Software in Your Developed Programs in accordance with the terms of this agreement);
+(f) disclose the results of any performance benchmarks or similar testing of the Software to any third party without Helsing's prior written consent;
+(g) publish the Software, in whole or in part, for others to copy; or
+(h) use the Software, in whole or in part, to develop applications for other platforms or to develop another Software.
+
+2.2 In addition, You will not:
+(a) use Helsing's trademarks to market Your Developed Program without written permission of Helsing;
+(b) use Helsing's trademarks in a way that suggests Your Developed Programs come from or are endorsed by Helsing;
+(c) use the Software to create, develop, or use any program, software, or service which takes away the functionality of Helsing products or other Helsing software; or
+(d) modify, distribute, or convey the Software so that in whole or in part it becomes subject to any license which requires, as a condition of license, use, modification, distribution, or conveyance, that (i) the code be disclosed or distributed in source code form; (ii) others have the right to modify or create derivative works of it; and/or (iii) it becomes redistributable at no charge.
+
+2.3 You will:
+(a) include on each copy You create all applicable copyright and trademark notices of Helsing; and
+(b) remain at all times responsible and liable for the misuse of the Software by Your employees and consultants.
+
+3. Ownership of Intellectual Property
+
+The Software, in whole or in part, and any authorized copies that You make are the intellectual property of, and all rights therein are owned by Helsing. The structure, organization, and code of the Software are valuable trade secrets and confidential information of Helsing. The Software is protected by law, including without limitation the copyright laws the EU, Germany and other countries, and by international treaty provisions. You agree to protect Helsing's copyright and other ownership interests in all items in the Software.
+
+4. Support
+
+Helsing is not obligated to provide any technical or other support ("Support") for the Software. However, if Helsing chooses to provide any Support to You, Your use of such Support will be governed by then-current Helsing policies.
+
+5. Feedback
+
+With respect to any technical or other information You provide to Helsing (whether oral or written) in connection with the Software (including but not limited to reporting errors, or making suggestions for improvements or changes to the Software or elements thereof), You agree that Helsing has a perpetual, irrevocable, unrestricted right to use such information for its business purposes, including for product support and development. Helsing will not use such information in a form that personally identifies You.
+
+6. Upgrades; End of Life
+
+Helsing is not obligated to provide any upgrades or future versions of the Software. Helsing reserves the right to discontinue offering the Software, or to modify the Software at any time, in its sole discretion. If You are dissatisfied with any aspect or elements of the Software at any time, Your sole and exclusive remedy is to cease using the Software.
+
+7. Export Restrictions
+
+THE SOFTWARE IS SUBJECT TO GERMANY'S EXPORT LAWS AND REGULATIONS. YOU MUST COMPLY WITH ALL EXPORT LAWS AND REGULATIONS, WHICH INCLUDE RESTRICTIONS ON DESTINATIONS, END-USERS AND END USE. You acknowledge and agree that You will not import, export, or re-export, directly or indirectly, the Software or related information to any country in violation of the laws and regulations of any applicable jurisdiction. You further agree to defend, indemnify, and hold harmless Helsing, its affiliates, and their respective directors, officers, employees, agents and representatives from any losses, costs, claims, or other liabilities arising out of your breach of this Section.
+
+8. Data Collection
+
+If You use the Software to run applications developed by a third party or that access data, content, or resources provided by a third party, You agree that Helsing is not responsible for those applications, data, content, or resources.
+
+9. Trademark License
+
+Nothing in this Agreement gives you a right to use any of Helsing's trade names, trademarks, service marks, logos, domain names or other distinctive brand features. You agree that you will not adopt, use or attempt to register, whether as a corporate name, domain name, product name, trademark, service mark or other indication of origin, any trademark of Helsing or any mark that is confusingly similar to or will dilute the distinctive nature of the Helsing trademarks. You also agree that you will not include the name of this Software or any of the terms used  by Helsing to describe its products as part of the name for any application that you develop using the Software.
+
+10. Modifications Notices
+
+Helsing may change this Agreement by giving You notice before the change is in force. If You do not agree to these changes, then You must cancel and stop using the Software before the changes are in force. If You do not stop using the Software, then Your use of the Software will continue under the changed Agreement.
+
+11. Term and Termination
+
+This Agreement is effective until terminated. Helsing has the right to terminate this Agreement immediately if You fail to comply with any term of this Agreement. Despite anything contained in this Agreement to the contrary, Helsing may, in its sole discretion, terminate or suspend access to the Software at any time. You acknowledge that termination of Your rights and/or monetary damages may not be a sufficient remedy if You breach this license and that Helsing will be entitled, without waiving any other rights or remedies, to seek injunctive or equitable relief in the event of a breach. Upon any termination of this Agreement, You must:
+(a) destroy or return to Helsing all full and partial copies of the Software; and
+(b) discontinue distribution of any Developed Programs.
+
+Sections 2, 3, 5, 7, 8 and 11-17, along with any other provisions that would reasonably be deemed to survive termination, shall survive any termination and/or expiration of this Agreement.
+
+12. Disclaimer of Warranties
+
+THE SOFTWARE IS LICENSED "AS-IS." YOU BEAR THE RISK OF USING IT. HELSING DISCLAIMS ALL WARRANTIES – STATUTORY, EXPRESS OR IMPLIED – INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. HELSING PROVIDES NO EXPRESS OR IMPLIED WARRANTIES OR GUARANTEES WITH RESPECT TO YOUR USE OF THE SOFTWARE. YOU MAY HAVE ADDITIONAL CONSUMER RIGHTS UNDER YOUR LOCAL LAWS WHICH THIS AGREEMENT CANNOT CHANGE.
+
+13. Allocation of Risk
+
+You and Helsing agree that the foregoing warranty disclaimer and limitation of liability set forth below, respectively, fairly allocate the risks in the Agreement between the parties. You and Helsing further agree that this allocation is an essential element of the basis of the bargain between the parties, that Helsing would not have entered this Agreement without these limitations, and that the limitations will apply notwithstanding any failure of the essential purpose of this Agreement or any limited remedy hereunder.
+
+14. Limitation of Liability
+
+IN NO EVENT SHALL HELSING BE LIABLE TO YOU FOR ANY LOST PROFITS OR INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE, OR EXEMPLARY DAMAGES.
+
+15. Indemnity
+
+To the maximum extent permitted by law, You agree to defend, indemnify, and hold harmless Helsing, its affiliates, and their respective directors, officers, employees, agents and representatives from and against any and all claims, actions, suits, or proceedings, as well as any and all losses, liabilities, damages, costs, and expenses (including reasonable attorneys' fees), arising out of or allegedly based (in whole or in part) on:
+(a) Your use of the Software;
+(b) any of Your applications using the Software that infringes any copyright, trademark, trade secret, trade dress, patent, or other intellectual property right of any person, or defames any person or violates their rights of publicity or privacy;
+(c) any violation by You of any applicable law or regulation; or
+(d) any non-compliance by You with the terms of this Agreement.
+
+16. Applicable Law; Venue
+
+This Agreement will be governed by and construed in accordance with the laws of Germany, excluding its conflict of laws principles. Any legal action or proceeding arising under this Agreement will be brought exclusively in the courts located in Munich, Germany and the parties hereby irrevocably consent to personal jurisdiction and venue therein.
+
+17. General Provisions
+
+This Agreement is not assignable or transferable, in whole or in part, by You, whether involuntarily, by merger, operation of law or otherwise, without Helsing's prior written consent. Any attempted transfer in violation of this Section is void.

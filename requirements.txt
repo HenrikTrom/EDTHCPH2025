@@ -1,0 +1,10 @@
+numpy
+torch
+matplotlib
+soundfile
+librosa
+sklearn
+roseus
+# python -m ipykernel install --user --name=myipy --display-name "Python (myipy)"
+# source venv_ac/bin/activate
+
