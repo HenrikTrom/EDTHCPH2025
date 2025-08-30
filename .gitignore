@@ -2,6 +2,7 @@
 out/
 __pycache__/
 .dmypy.json
+.DS_Store
 
 # Ensure examples are kept
 !data/
