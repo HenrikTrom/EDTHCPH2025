@@ -1,4 +1,5 @@
 import random
+import seaborn as sns
 
 from nbformat import convert
 import torchaudio.transforms as T
@@ -10,6 +11,7 @@ from tqdm import tqdm  # Make sure tqdm is installed
 from pathlib import Path
 import matplotlib.pyplot as plt
 from torch.utils.data import Dataset
+import numpy as np
 
 from hs_hackathon_drone_acoustics import CLASSES, RAW_DATA_DIR
 from hs_hackathon_drone_acoustics.base import AudioDataset
@@ -122,7 +124,7 @@ def to_cuda(model):
     return model, device
     
 def plot_metrics(metrics):
-    import matplotlib.pyplot as plt
+    print("Max Acc:", np.amax(metrics["val_acc"]))
     plt.figure(figsize=(20, 10))
 
     # Plot train and val loss
@@ -154,3 +156,26 @@ def plot_metrics(metrics):
     plt.tight_layout()
     plt.show()
     
+    
+def plot_confusion_matrix(model, device, n_classes, ds_loader):
+    # Suppose cm is your confusion matrix (2D numpy array)
+    cm = np.zeros((n_classes, n_classes), dtype=int)
+
+    # Collect predictions and fill cm
+    model.eval()
+    with torch.no_grad():
+        for X, y in ds_loader:
+            X = X.to(device)
+            y = y.to(device)
+            outputs = model(X)
+            _, predicted = torch.max(outputs, 1)
+            for t, p in zip(y.cpu().numpy(), predicted.cpu().numpy()):
+                cm[t, p] += 1
+
+    # Plot using seaborn
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues")
+    plt.xlabel("Predicted")
+    plt.ylabel("True")
+    plt.title("Validation Confusion Matrix")
+    plt.show()
