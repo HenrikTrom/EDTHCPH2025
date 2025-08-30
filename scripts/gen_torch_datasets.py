@@ -121,5 +121,36 @@ def to_cuda(model):
     model = model.to(device)
     return model, device
     
-    
+def plot_metrics(metrics):
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(20, 10))
+
+    # Plot train and val loss
+    plt.subplot(1, 3, 1)
+    plt.plot(metrics["train_loss"], label="Train Loss")
+    if metrics["val_loss"]:
+        plt.plot(metrics["val_loss"], label="Val Loss")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.title("Loss")
+    plt.legend()
+
+    # Plot train accuracy
+    plt.subplot(1, 3, 2)
+    plt.plot(metrics["train_acc"], label="Train Acc")
+    plt.xlabel("Epoch")
+    plt.ylabel("Accuracy")
+    plt.title("Train Accuracy")
+    plt.legend()
+
+    # Plot val accuracy
+    plt.subplot(1, 3, 3)
+    plt.plot(metrics["val_acc"], label="Val Acc")
+    plt.xlabel("Epoch")
+    plt.ylabel("Accuracy")
+    plt.title("Validation Accuracy")
+    plt.legend()
+
+    plt.tight_layout()
+    plt.show()
     
