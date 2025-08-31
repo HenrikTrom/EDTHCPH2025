@@ -1,5 +1,6 @@
 import random
 import seaborn as sns
+from torchvision import transforms
 
 from nbformat import convert
 import torchaudio.transforms as T
@@ -22,6 +23,7 @@ def convert_to_mtx(waveform):
     waveform_to_spectrogram = T.Spectrogram(win_length=4096, n_fft=4096, hop_length=2048)
     db_transform = T.AmplitudeToDB(stype="power", top_db=80)
     spectrogram = db_transform(waveform_to_spectrogram(resample(waveform.data)))
+    # spectrogram = db_transform(waveform_to_spectrogram(waveform.data))
     return spectrogram
 
 def create_chunks(mtx, n):
@@ -77,6 +79,22 @@ class FastTensorDataset(Dataset):
         return len(self.tensors)
 
 
+class AddUniformNoise:
+    def __init__(self, min_val=-0.1, max_val=0.1, p=0.5):
+        """
+        min_val, max_val: range of uniform noise
+        p: probability to apply the transform
+        """
+        self.min_val = min_val
+        self.max_val = max_val
+        self.p = p
+
+    def __call__(self, x):
+        if torch.rand(1).item() < self.p:
+            noise = torch.empty_like(x).uniform_(self.min_val, self.max_val)
+            x = x + noise
+        return x
+
 def gen_dataloaders(path, n_chunks, batch_size):
     spect_chunks_train, labels_train, spect_chunks_val, labels_val = gen_datasets(path, n_chunks)
     train_ds_torch = FastTensorDataset(spect_chunks_train, labels_train)
@@ -98,14 +116,15 @@ def plot_ds_examples(train_ds_torch, val_ds_torch):
 
     for i in range(10):
         # Train samples
-        X, y = train_ds_torch[i]
-        axes[0, i].imshow(X.cpu().numpy(), aspect="auto", origin="lower")
-        axes[0, i].set_title(f"Train label: {y.item()}")
+        X_, y = train_ds_torch[i]
+        X = X_.detach().numpy()
+        axes[0, i].imshow(X, aspect="auto", origin="lower")
+        axes[0, i].set_title(f"Train label: {y}")
         axes[0, i].axis("off")
         # Validation samples
         Xv, yv = val_ds_torch[i]
-        axes[1, i].imshow(Xv.cpu().numpy(), aspect="auto", origin="lower")
-        axes[1, i].set_title(f"Val label: {yv.item()}")
+        axes[1, i].imshow(Xv, aspect="auto", origin="lower")
+        axes[1, i].set_title(f"Val label: {yv}")
         axes[1, i].axis("off")
 
     plt.tight_layout()
